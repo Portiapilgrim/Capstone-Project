@@ -1,0 +1,142 @@
+.gradient-container{
+    background-color:#F4E9DD; /* For browsers that do not support gradients  https://portiapilgrim.github.io/Resume/ */
+    background-image: linear-gradient(#F4E9DD 40%, #F8DCE6 30%, #CFA3D6 20%, #2B192E 10%);
+}
+.h1{font-family: 'Bebas Neue', sans-serif;
+}
+.landing{
+  
+}
+body{
+    width: 100%;
+}
+.gradient-container{
+    position: relative;
+    height: 300vh;
+    width: 100%;
+    background-color:#F4E9DD; /* For browsers that do not support gradients */
+    background-image: linear-gradient(#F4E9DD , #F8DCE6 , #CFA3D6 , #2B192E );
+}
+.landing{
+    height: 100vh;
+    text-align: left;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+      
+
+.landing-text{
+    position: absolute;
+    width: 60%;
+    left:10%;
+    z-index: 100;
+}
+.h1{
+    font-size: 6rem;
+   color: white;
+   z-index: 1;
+    margin: 0;
+    padding: 0;
+   }
+.landing-img{
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+   }
+.name{
+    position: relative;
+    font-size: 2rem;
+    color: white;
+    margin: 0;
+    padding: 0; 
+    z-index: 1;
+    line-height:1rem;
+    letter-spacing: 0.3rem;  
+}
+.name p{
+    margin: 0;
+    margin-bottom: 5;
+    margin-left: 4%;
+    line-height:normal;
+    line-break: auto;
+}
+.name, .h1{
+    margin-left: 30%;
+}
+
+.profile-picture{
+    border-radius: 50%;
+}
+.hero{
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
+    height:max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-basis: 200px;
+}
+.hero div{
+   display: inline-block;
+}
+
+.hero > div>h2{
+    font-size: 2rem;
+    color: white;
+    line-height:1rem;
+    letter-spacing: 0.3rem; 
+}
+.hero >div>p{
+    font-size: 1.5rem;
+    line-height: 0.8rem;
+    line-break: 1rem;
+    margin: 0;
+    line-height:normal;
+
+    }
+.features{   
+    margin-top: 30px;
+    text-align: center;
+}
+.portfolio{
+    position: relative;
+    text-align: center;
+    width: 100%;
+
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: minmax(1fr, auto);
+    margin: 0 auto 0 auto;
+}
+@media (max-width:576px) {
+    .portfolio{
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width:890px) {
+    .portfolio{
+        grid-template-columns: 1fr;
+    }
+}
+
+.footer{
+font-size: 1rem;
+color: white;
+
+text-align: right;
+margin-right: 20%;
+}
+.container{
+display: grid;
+grid-template-columns: 1fr;
+}
+.text{
+float: left;
+margin-left: 10%;
+}
